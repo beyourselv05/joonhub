@@ -1,3 +1,5 @@
+# 구글링 참고 안하고 푼 문제.
+
 # [Bronze III] 공 넣기 - 10810 
 
 [문제 링크](https://www.acmicpc.net/problem/10810) 
