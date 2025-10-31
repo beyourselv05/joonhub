@@ -8,9 +8,11 @@
 
 int main() {
     int n;
-    char num[101];
-    int sum = 0;
     scanf("%d", &n);
+    
+    char num[n];
+    int sum = 0;
+    
     scanf("%s", num);   //문자열로 입력받기.
     for(int i=0; i<n; i++) {
         sum = sum + num[i] - '0';     //문자열5는 정수형으로 53
