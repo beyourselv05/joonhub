@@ -1,3 +1,4 @@
+### reference -> https://velog.io/@yeonsubaek/%EB%B0%B1%EC%A4%80-1152%EB%B2%88-%EB%8B%A8%EC%96%B4%EC%9D%98-%EA%B0%9C%EC%88%98-c%EC%96%B8%EC%96%B4
 # [Bronze II] 단어의 개수 - 1152 
 
 [문제 링크](https://www.acmicpc.net/problem/1152) 
