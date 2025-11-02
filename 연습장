@@ -1,0 +1,43 @@
+//1i. 할머니가 외운 단어가 주어짐.
+//1o. 다이얼을 걸기위한 최소시간.
+
+//alp 배열에 순서대로 3,3,3,4,4,4,5,5,5, 처럼 요소를 넣음.
+//
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int count=0;
+    int len;
+    char str[16];
+    char alp[27];
+    char a;
+    
+    scanf("%s", str);    //string = WA
+    len = strlen(str);   //len = 2
+    
+    for(int i=1, a='A'; i<=26; i++) {    //alp배열에 알파벳 저장
+        alp[i] = a++; 
+    }
+    
+    for(int i=1; i<=len; i++) {
+        if (str[i] == alp[i] || str[i] == alp[i+1] || str[i] == alp[i+2]) count += 3;
+        if (str[i] == alp[i+3] || str[i] == alp[i+4] || str[i] == alp[i+5]) count += 4;
+        if (str[i] == alp[i+6] || str[i] == alp[i+7] || str[i] == alp[i+8]) count += 5;
+        if (str[i] == alp[i+9] || str[i] == alp[i+10] || str[i] == alp[i+11]) count += 6;
+        if (str[i] == alp[i+12] || str[i] == alp[i+13] || str[i] == alp[i+14]) count += 7;
+        if (str[i] == alp[i+15] || str[i] == alp[i+16] || str[i] == alp[i+17] || str[i] == alp[i+18]) count += 8;
+        if (str[i] == alp[i+19] || str[i] == alp[i+20] || str[i] == alp[i+21]) count += 9;
+        if (str[i] == alp[i+22] || str[i] == alp[i+23] || str[i] == alp[i+24] || str[i] == alp[i+25]) count += 10;
+        printf("%d\n", count);
+    }
+    printf("%d", count);
+#if 0    
+    for(int i=0; i<len; i++) {
+        count += 
+    }
+#endif    
+}
+
+//abc 3, def 4, ghi 5, jkl 6, mno 7, pqrs 8, tuv 9, wxyz 10sec
