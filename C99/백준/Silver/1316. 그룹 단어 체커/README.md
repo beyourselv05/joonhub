@@ -1,3 +1,5 @@
+## reference -> https://blog.naver.com/yosoy_coreana/222447918575
+
 # [Silver V] 그룹 단어 체커 - 1316 
 
 [문제 링크](https://www.acmicpc.net/problem/1316) 
