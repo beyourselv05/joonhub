@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <title>document</title>
+</head>
+<body>
+    
+    <form>
+        <!-- 텍스트 입력-->
+        <label for="username">사용자 이름:</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <!-- 패스워드 입력 -->
+        <lable for="password">비밀번호:</lable>
+        <input type="password" id="password" name="password">
+        
+        <!-- 라디오 버튼 -->
+        <p>성별:</p>
+        <input type="radio" name="gender" id="male">
+        <label for="male">남성</label>
+        
+        <input type="radio" name="gender" id="female">
+        <label for="female">여성</label>
+        <br>
+        
+        <!-- 체크박스 -->
+        <lable for="subscribe">구독</lable>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        
+        <lable for="like">좋아요</lable>
+        <input type="checkbox" id="like" name="like">
+        <br>
+        
+        <!-- 드롭다운 선택-->
+        <label for="country">country</label>
+        <select name="country" id="country">
+            
+            <option value="korea">korea</option>
+            <option value="usa">usa</option>
+            <option value="japan">japan</option>
+            
+        </select>
+        <br>
+        
+        <!-- 텍스트 에어리어 -->
+        <label for="message">제출</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <br>
+        
+        <!-- 제출버튼 -->
+        <input type="submit" value="submit">
+        
+    </form>
+    
+</body>
+</html>
