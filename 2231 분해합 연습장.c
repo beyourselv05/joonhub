@@ -17,31 +17,32 @@ int main() {
     scanf("%d", &N);
     int sum = 0;
     int digit = 0;  
-    int arr=0;
+    int m;
+    int value;
     
+    m = N;
+    
+    while(m!=0) {           //자릿수 판단
+        m = m / 10;
+        digit++;
+        }
+
     if(N >= 1 && N <= 9) {          //한자리수
-        printf("0");
+        printf("0 ");
     }
     
-    if(N >= 10 && N <= 999,999) {   //core logic
+    if(N >= 10 && N <= 999999) {   //core logic
         for(int i=0; i<54; i++) {
-            N = N - i;     //N = 198 (216-18)
-            
-            while(N!=0) {           //자릿수 판단
-                N = N / 10;
-                digit++;
-            }
-            
-            arr = N;
-            printf("%d", arr);
-            for(int j=0; j<digit; j++) {
+            value = N - i;     //N = 198 (216-18)
+            int arr, arr1 = N;
+            for(int j=0; j<digit; j++) {        //각 요소 더하는 알고리즘 ex)1+9+8
                 int cnt = 10;
                 arr = arr + N%10;  
-                N = N/10;
+                arr1 = arr1/10;
                 cnt = 10*cnt;
             }
         }
-        printf("%d", arr);
+        printf("%d", value);
     }
     
     if(N == 1000000) printf("1");   //백만
