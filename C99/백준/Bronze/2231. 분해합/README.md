@@ -1,3 +1,5 @@
+## reference -> https://velog.io/@kimmainsain/C%EC%96%B8%EC%96%B4-%EB%B0%B1%EC%A4%80-2231-%EB%B6%84%ED%95%B4%ED%95%A9
+
 # [Bronze II] 분해합 - 2231 
 
 [문제 링크](https://www.acmicpc.net/problem/2231) 
