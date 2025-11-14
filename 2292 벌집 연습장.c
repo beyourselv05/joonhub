@@ -5,27 +5,33 @@
 #include <stdio.h>
 int main() {
     int n;
-    int cnt = 6;            //
+    int cnt = 7;            //
     int distance = 1;           //몇개의 방?
     int num_cnt = 0;
     
-    scanf("%d", &n);        //13입력
+    scanf("%d", &n);        //7입력
     while(n >= num_cnt) {
-        for(int j=0; j<cnt; j++) {
+        for(int j=2; j<=cnt; j++) {
             num_cnt++;
             
-            if(j%6 == 0) {
-                cnt += 6;
-                distance++;
-            }
             if(n == num_cnt) {
-                printf("%d", distance);
+                printf("%d", distance+1);
+            }
+            if(j/cnt == 1) {
+                cnt += ((distance+1)*6);        //end
+                j += ((distance)*6);          //start
+                distance++;
+                break;
             }
         }
     }
 }
-//변환점 1 -> 1개 / 2,3,4,5,6,7 -> 2개 / 8~19 -> 3개
+//2개 start:2   end:7
+//3개 start:8   end:19
+//4개 start:20  end:37
 
+//1(X), 2,3,4,5,6,7(2가 정답인데 3이 나옴),8... 20(4가 정답인데 3이 나옴.)
+//25부터 4가 나옴
 
 //2거리 - 2 ~ 7           6       (한칸씩 더 거리가 추가될수록 끝-시작 값의 범위 횟수가 6씩 커짐)
 //3거리 - 8 ~ 19          12
