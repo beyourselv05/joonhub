@@ -14,9 +14,10 @@ int main() {
     while(n >= num_cnt) {
         for(int j=ini; j<=cnt; j++) {
             num_cnt++;
-            
-            if(n == num_cnt) {
-                printf("%d", distance+1);
+
+            if(n == num_cnt+1) {
+                distance++;
+                printf("%d", distance);
             }
             
             if(j/cnt == 1) {
@@ -30,6 +31,7 @@ int main() {
 }
 //마지막 진척도 25.11.14(23:32)
 //1에서 오류남,7, 19 등에서 오류나는 것을 보면 코드 함수 실행의 순서 잘못인듯?
+
 
 //2개 start:2   end:7
 //3개 start:8   end:19
