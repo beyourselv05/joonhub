@@ -1,4 +1,4 @@
-# cmath 사용
+### cmath 사용
 # [Bronze II] TV 크기 - 1297 
 
 [문제 링크](https://www.acmicpc.net/problem/1297) 
