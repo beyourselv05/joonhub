@@ -4,9 +4,6 @@
 using namespace std;
 
 int main() {
-    cin.tie(NULL);
-    ios::sync_with_stdio(false);
-    
     int N, M;
     cin >> N >> M;
     string A, B;
